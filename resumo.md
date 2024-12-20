@@ -91,5 +91,26 @@ Este projeto aborda a configuração, gestão e operação de uma máquina virtu
 - Exploração de tecnologias de contêiner, como Docker, para maior flexibilidade em ambientes virtualizados.  
 
 ---
+### **15. Apt e aptitude**  
 
-Este resumo apresenta as bases para a configuração e gestão de máquinas virtuais, além de estratégias avançadas para atender a cenários mais complexos. Se precisar de mais detalhes sobre qualquer item, posso ajudar! 😊
+15.1. APT (Advanced Package Tool):
+O APT é um sistema de gerenciamento de pacotes usado para instalar, atualizar e remover pacotes de software em distribuições baseadas no Debian, como o Ubuntu.
+O APT facilita a instalação de software e resolve automaticamente as dependências entre pacotes, ou seja, quando você instala um pacote, ele automaticamente instala todos os pacotes necessários para que esse programa funcione corretamente.
+Ele é frequentemente utilizado via linha de comando com comandos como:
+sudo apt update: Atualiza a lista de pacotes disponíveis nos repositórios.
+sudo apt upgrade: Atualiza todos os pacotes instalados para suas versões mais recentes.
+sudo apt install <nome_do_pacote>: Instala um pacote específico.
+sudo apt remove <nome_do_pacote>: Remove um pacote específico.
+15.2. aptitude:
+aptitude é uma ferramenta de gerenciamento de pacotes mais avançada que utiliza a APT por trás dos bastidores, mas oferece uma interface de usuário mais amigável e algumas funcionalidades adicionais.
+A principal diferença é que o aptitude pode ser utilizado tanto via linha de comando quanto com uma interface gráfica (dependendo da configuração do sistema).
+Além disso, o aptitude tem uma capacidade maior de resolver conflitos de dependências e sugerir alternativas para pacotes que precisam ser instalados ou removidos.
+Para usar o aptitude via linha de comando, os comandos são semelhantes aos do APT, por exemplo:
+sudo aptitude update: Atualiza a lista de pacotes.
+sudo aptitude upgrade: Atualiza os pacotes instalados.
+sudo aptitude install <nome_do_pacote>: Instala um pacote.
+sudo aptitude remove <nome_do_pacote>: Remove um pacote.
+Resumo das diferenças:
+APT é a ferramenta básica de gerenciamento de pacotes, sendo mais simples e amplamente usada.
+aptitude oferece mais funcionalidades e uma interface mais amigável, com um foco adicional em resolver dependências e conflitos de pacotes de forma eficiente.
+
